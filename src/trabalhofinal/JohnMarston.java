@@ -8,19 +8,21 @@ public class JohnMarston extends Personagem {
 
     @Override
     public void usarHabilidade1(Personagem alvo) {
-        // Mira Precisa: dano alto
-        alvo.receberDano(forcaAtaque * 2);
+        // Mira Precisa
     }
 
     @Override
     public void usarHabilidade2(Personagem alvo) {
-        // Laço: prende o inimigo (ele perde o próximo turno)
-        alvo.turnoPreso = true;
+        // Laço
     }
 
     @Override
-    public String getNomeHabilidade1() { return "Mira Precisa"; }
+    public String getNomeHabilidade1() {
+        return "Mira Precisa";
+    }
 
     @Override
-    public String getNomeHabilidade2() { return "Laço"; }
+    public String getNomeHabilidade2() {
+        return "Laço";
+    }
 }
